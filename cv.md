@@ -33,3 +33,13 @@ I am a university student studying frontend development. I am familiar with HTML
 ## Experience
 
 Layout of simple websites
+
+## Education
+
+* **University :** I study at Moscow University *(Information systems and technologies)*
+* **RSSchool :** In progress
+
+## Language
+
+* **Russian :** Native
+* **English :** *A1* - I’m not good at English, so I’m actively studying it now
