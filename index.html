@@ -9,117 +9,120 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="header__menu menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Code Example</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Experience</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Education</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Education</a></li>
+<header class="header">
+  <nav class="header__menu menu">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+      <li class="menu__item"><a href="#code-example" class="menu__link">Code Example</a></li>
+      <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+      <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrapper">
+  <div class="wrapper__left">
+    <img class="img-profile" src="./assets/images/nikita.jpg" alt="Photo Nikita Khveshchenko">
+
+    <section class="contacts">
+      <h2 class="contacts__title">Contacts</h2>
+
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <h3 class="contacts__subtitle">Location</h3>
+          <p class="contacts__text">Volkovysk, Belarus</p>
+        </li>
+
+        <li class="contacts__item">
+          <h3 class="contacts__subtitle">Phone</h3>
+          <a href="tel:+375336663389" class="contacts__link">+375-(33)-666-33-89</a>
+        </li>
+
+        <li class="contacts__item">
+          <h3 class="contacts__subtitle">E-mail</h3>
+          <a href="mailto:web-junior@outlook.com" class="contacts__link">web-junior@outlook.com</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </section>
 
-  <main class="wrapper">
-    <div class="wrapper__left">
-      <img  src="#" alt="Photo Nikita Khveshchenko">
+    <section class="skills">
+      <h2 class="skills__title">Skills</h2>
 
-      <section class="contacts">
-        <h2 class="contacts__title">Contacts</h2>
+      <ul class="skills__list">
+        <li class="skills__item">HTML</li>
+        <li class="skills__item">CSS(SCSS/SASS)</li>
+        <li class="skills__item">JavaScript</li>
+      </ul>
+    </section>
 
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__subtitle">Location</h3>
-            <p class="contacts__text">Volkovysk, Belarus</p>
-          </li>
+    <section class="language">
+      <h2 class="language__title">Language</h2>
 
-          <li class="contacts__item">
-            <h3 class="contacts__subtitle">Phone</h3>
-            <a href="tel:+375336663389" class="contacts__link">+375-(33)-666-33-89</a>
-          </li>
+      <ul class="language__list">
+        <li class="language__item">
+          <p class="language__text">Russian</p>
 
-          <li class="contacts__item">
-            <h3 class="contacts__subtitle">E-mail</h3>
-            <a href="mailto:web-junior@outlook.com" class="contacts__link">web-junior@outlook.com</a>
-          </li>
-        </ul>
-      </section>
+          <div class="progress">
+            <span class="progress__item progress__colored"></span>
+            <span class="progress__item progress__colored"></span>
+            <span class="progress__item progress__colored"></span>
+            <span class="progress__item progress__colored"></span>
+            <span class="progress__item progress__colored"></span>
+          </div>
+        </li>
 
-      <section class="skills">
-        <ul class="skills__list">
-          <li class="skills__item">HTML</li>
-          <li class="skills__item">CSS(SCSS/SASS)</li>
-          <li class="skills__item">JavaScript</li>
-        </ul>
-      </section>
+        <li class="language__item">
+          <p class="language__text">English(A1)</p>
 
-      <section class="language">
-        <ul class="language__list">
-          <li class="language__item">
-            <p class="language__text">Russian</p>
+          <div class="progress">
+            <span class="progress__item progress__colored"></span>
+            <span class="progress__item"></span>
+            <span class="progress__item"></span>
+            <span class="progress__item"></span>
+            <span class="progress__item"></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
 
-            <div class="progress">
-              <span class="progress__item progress__colored"></span>
-              <span class="progress__item progress__colored"></span>
-              <span class="progress__item progress__colored"></span>
-              <span class="progress__item progress__colored"></span>
-              <span class="progress__item progress__colored"></span>
-            </div>
-          </li>
+  <div class="wrapper__right">
+    <section class="name">
+      <h1 class="name__title">Nikita Khveshchenko</h1>
+      <p class="name__text">Front-end developer</p>
+    </section>
 
-          <li class="language__item">
-            <p class="language__text">English(A1)</p>
+    <section class="about" id="about">
+      <h2 class="about__title">About</h2>
 
-            <div class="progress">
-              <span class="progress__item progress__colored"></span>
-              <span class="progress__item"></span>
-              <span class="progress__item"></span>
-              <span class="progress__item"></span>
-              <span class="progress__item"></span>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </div>
+      <p class="about__description">
+        I am a university student studying frontend development. I am familiar with HTML, CSS, and JavaScript.
+        I have created simple web applications and websites. My goal is to continue growing in the field of web
+        development and apply my knowledge in practice.
+      </p>
+    </section>
 
-    <div class="wrapper__right">
-      <section class="name">
-        <h1 class="name__title">Nikita Khveshchenko</h1>
-        <p class="name__text">Front-end developer</p>
-      </section>
+    <section class="education" id="education">
+      <h2 class="education__title">Education</h2>
 
-      <section class="about">
-        <h2 class="about__title">About</h2>
-
-        <p class="about__description">
-          I am a university student studying frontend development. I am familiar with HTML, CSS, and JavaScript.
-          I have created simple web applications and websites. My goal is to continue growing in the field of web
-          development and apply my knowledge in practice.
-        </p>
-      </section>
-
-      <section class="education">
-        <h2 class="education__title">Education</h2>
-
-        <div class="education__wrapper">
-          <article class="education__item">
-            <h3 class="education__name">Moscow University for Industry and Finance "Synergy"</h3>
-            <div class="education__container">
-              <p class="education__speciality">
-                Information systems and technologies
-              </p>
-            </div>
+      <div class="education__wrapper">
+        <article class="education__item">
+          <h3 class="education__name">Moscow University for Industry and Finance "Synergy"</h3>
+          <div class="education__container">
+            <p class="education__speciality">
+              Information systems and technologies
+            </p>
 
             <p class="date">2021 - to this day</p>
-          </article>
-        </div>
-      </section>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <section class="code-example">
-        <h2 class="code-example__title">Code Example</h2>
+    <section class="code-example" id="code-example">
+      <h2 class="code-example__title">Code Example</h2>
 
-        <pre>
+      <pre>
           <code>
             <span class="code_function">function</span> solution(a, b) {
               <span class="code_const">const</span> lengthA = a.length;
@@ -129,43 +132,68 @@
             }
           </code>
         </pre>
-      </section>
+    </section>
 
-      <section class="projects">
-        <h2 class="projects__title">Projects</h2>
+    <section class="projects">
+      <h2 class="projects__title" id="projects">Projects</h2>
 
-        <ul class="projects__list">
-          <li class="projects__item">
-            <img src="#" alt="Cv">
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a href="https://github.com/Web-Junior/rsschool-cv">
+            <img src="./assets/images/resume.png" alt="Cv">
 
             <div class="projects__content">
               <p class="projects__description">
                 Educational project "Resume"
               </p>
             </div>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </main>
+          </a>
+        </li>
 
-  <footer class="footer">
-    <ul class="footer__list">
-      <li class="footer__item">
-        <a class="footer__link" href="https://github.com/Web-Junior">GitHub</a>
-      </li>
+        <li class="projects__item">
+          <a href="https://github.com/Web-Junior/rsschool-cv">
+            <img src="./assets/images/resume.png" alt="Cv">
 
-      <li class="footer__item">
-        2024
-      </li>
+            <div class="projects__content">
+              <p class="projects__description">
+                Educational project "Resume"
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a href="https://github.com/Web-Junior/rsschool-cv">
+            <img src="./assets/images/resume.png" alt="Cv">
 
-      <li class="footer__item">
-        <a class="footer__link" href="https://rs.school/courses/javascript-ru">
-          <img class="footer__img" src="#" alt="Logo Rs School">
-        </a>
-      </li>
-    </ul>
-  </footer>
+            <div class="projects__content">
+              <p class="projects__description">
+                Educational project "Resume"
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <ul class="footer__list">
+    <li class="footer__item">
+      <a class="footer__link" href="https://github.com/Web-Junior">GitHub</a>
+    </li>
+
+    <li class="footer__item">
+      2024
+    </li>
+
+    <li class="footer__item">
+      <a class="footer__link" href="https://rs.school/courses/javascript-ru">
+        <img class="footer__img" src="./assets/icons/rs-school-logo.svg" alt="Logo Rs School">
+      </a>
+    </li>
+  </ul>
+</footer>
 </body>
 
 </html>
