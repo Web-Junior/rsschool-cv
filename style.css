@@ -1,10 +1,285 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 html {
     box-sizing: border-box;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 13px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #6d7081;
+    bottom: -4px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    padding: 20px 15px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper__left {
+    display: flex;
+    flex-direction: column;
+    padding: 0 22px;
+    background-color: #FAFAFA;
+    width: 20%;
+}
+
+.wrapper__right {
+    width: 80%;
+    margin: 0 30px;
+}
+
+.img-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+.contacts__title {
+    margin-bottom: 15px;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contacts__link {
+    position: relative;
+}
+
+.contacts__link:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #6d7081;
+    bottom: 0;
+}
+
+.skills {
+    margin-bottom: 30px;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.skills__item {
+    font-size: 1.4rem;
+}
+
+.progress {
+    display: flex;
+    gap: 7px;
+}
+
+.language__list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.language__text {
+    margin-bottom: 5px;
+}
+
+.progress__item {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 100px;
+}
+
+.progress__colored {
+    background-color: #333;
+}
+
+.name {
+    margin-bottom: 30px;
+}
+
+.name__title {
+    margin-bottom: 10px;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.about__description {
+    font-size: 1.5rem;
+}
+
+.education {
+    margin-bottom: 30px;
+}
+
+.education__item {
+    padding: 10px 0;
+}
+
+.education__name {
+    margin-bottom: 5px;
+}
+
+.education__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education__speciality {
+    color: #6d7081;
+}
+
+.code-example {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.code_function {
+    color: blueviolet;
+}
+
+.code_const {
+    color: orangered;
+}
+
+.code_return {
+    color: cornflowerblue;
+}
+
+.projects {
+    margin-bottom: 30px;
+}
+
+.projects__item {
+    padding: 15px;
+    width: 300px;
+    background-color: #b6b9c4;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.projects__item > img {
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.footer {
+    height: 100px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.footer__img {
+    height: 100px;
+    width: 100px;
+}
+
